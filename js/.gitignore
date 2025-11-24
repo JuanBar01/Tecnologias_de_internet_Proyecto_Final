@@ -1,0 +1,10 @@
+# Node
+node_modules/
+.env
+.DS_Store
+
+# Archivos de bases de datos locales
+db/database.db
+
+# Logs
+*.log
