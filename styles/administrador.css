@@ -1,0 +1,265 @@
+body {
+    background-color: #ffe6ff;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-main {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+/* ======================= */
+/* FORMULARIOS PRODUCTOS */
+/* ======================= */
+
+.formulario-producto {
+    flex: 1 1 400px;
+    max-width: 450px;
+    background-color: #fff;
+    border: 2px solid #f5b3ff;
+    border-radius: 15px;
+    padding: 25px 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.formulario-producto:hover {
+    transform: scale(1.02);
+}
+
+.formulario-producto h2 {
+    color: #ff0080;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-agregar {
+    width: 100%;
+    background-color: #ffc1f0;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-agregar:hover {
+    background-color: #ff80d5;
+    color: white;
+}
+
+/* ======================= */
+/* GRID PRODUCTOS ABAJO */
+/* ======================= */
+
+.lista-productos {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.lista-productos h2 {
+    color: #ff0080;
+    margin-bottom: 20px;
+}
+
+#productos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+/* ======================= */
+/* CARTAS PRODUCTOS */
+/* ======================= */
+
+.producto {
+    width: 100%;
+    max-width: 260px;
+    perspective: 1000px;
+}
+
+.producto-inner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.producto:hover .producto-inner {
+    transform: rotateY(180deg);
+}
+
+.producto-front,
+.producto-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    background-color: #fff;
+    border: 2px solid #f5b3ff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.producto-front img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto-front h4 {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    color: #e2559b;
+}
+
+.precio {
+    background-color: #ffb3e6;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+.producto-back {
+    transform: rotateY(180deg);
+    font-size: 0.9rem;
+    color: #333;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.producto-back h4 {
+    color: #e2559b;
+    margin-bottom: 12px;
+}
+
+.producto-back ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.producto-back ul li {
+    margin-bottom: 8px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.btn-compra {
+    background-color: #ffc1f0;
+    border: none;
+    padding: 10px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn-compra:hover {
+    background-color: #ff80d5;
+    transform: scale(1.05);
+}
+
+/* ======================= */
+/* RESPONSIVE */
+/* ======================= */
+
+@media (max-width: 1150px) {
+    #productos-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 850px) {
+    #productos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .admin-main {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 550px) {
+    #productos-container {
+        grid-template-columns: 1fr;
+    }
+}
+.btn-eliminar {
+    background-color: #ff4d6d;
+    border: none;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    width: 80%;
+    margin: 10px 0 0 0;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-eliminar:hover {
+    background-color: #e6004d;
+    transform: scale(1.05);
+}
+/* En tu administrador.css, agregar */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}

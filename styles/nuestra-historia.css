@@ -1,0 +1,153 @@
+/* ----- SECCIÓN PRINCIPAL ----- */
+.nuestra-historia {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding: 60px 10%;
+  background: linear-gradient(180deg, #fff 0%, #ffeaf3 100%);
+  box-sizing: border-box;
+}
+
+/* ----- INTRO ----- */
+.nuestra-historia .intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.nuestra-historia .intro h1 {
+  font-size: 2.5rem;
+  color: #e2559b;
+  margin-bottom: 20px;
+}
+
+.nuestra-historia .intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ----- ORIGEN ----- */
+.origen {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.origen .texto {
+  flex: 1 1 450px;
+}
+
+.origen .texto h2 {
+  color: #e2559b;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.origen .texto p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.origen .imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.origen .imagen img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- CRECIMIENTO ----- */
+.crecimiento {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.crecimiento .texto {
+  flex: 1 1 450px;
+}
+
+.crecimiento .texto h2 {
+  color: #e2559b;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.crecimiento .texto p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.crecimiento .imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.crecimiento .imagen img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- HOY ----- */
+.hoy {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hoy h2 {
+  color: #e2559b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hoy p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.hoy img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .nuestra-historia {
+    padding: 40px 5%;
+  }
+
+  .origen,
+  .crecimiento {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .origen .imagen img,
+  .crecimiento .imagen img {
+    max-width: 350px;
+  }
+
+  .hoy img {
+    max-width: 90%;
+  }
+}

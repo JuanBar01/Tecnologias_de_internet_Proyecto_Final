@@ -1,0 +1,87 @@
+.ayuda-contacto-chimba {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #fff0f6 100%);
+  color: #333;
+  padding: 60px 10%;
+  box-sizing: border-box;
+}
+
+/* ----- HERO ----- */
+.hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(90deg, #f18ec2, #e2559b);
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ----- CARDS ----- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(225, 94, 155, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(225, 94, 155, 0.25);
+  border: 2px solid #f18ec2;
+}
+
+.card h2 {
+  color: #e2559b;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card p,
+.card ul {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card li {
+  margin-bottom: 6px;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .ayuda-contacto-chimba {
+    padding: 40px 5%;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}

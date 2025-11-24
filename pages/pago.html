@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayuda y contacto / La Felicidad En Papel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/pago.css">
+</head>
+
+<body>
+    <!-- MENÚ SUPERIOR -->
+    <header>
+        <div class="left-section">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/Logo.png" alt="Logo">
+                </a>
+            </div>
+
+            <nav class="boton menu">
+                <a href="../index.html">Inicio</a>
+                <a href="../pages/crea-tu-ancheta.html">Crea Tu Ancheta</a>
+                <a href="../pages/anchetas-de-coleccion.html">Anchetas De Colección</a>
+                <a href="../pages/quienes-somos.html">Nosotros</a>
+                <a href="../pages/ayuda-contacto.html">Ayuda / Contacto</a>
+            </nav>
+        </div>
+
+        <div class="right-section">
+            <a href="../pages/iniciar-sesion.html">
+                <i class="fa-solid fa-circle-user"></i> Iniciar Sesión
+            </a>
+            <a href="../pages/carrito.html" class="carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="carrito-count">0</span>
+            </a>
+        </div>
+    </header>
+
+
+    <main>
+        <h1>Pagar tu compra</h1>
+
+        <div id="resumen-compra">
+            <!-- Productos seleccionados se mostrarán aquí con JS -->
+        </div>
+
+        <div id="total-compra">
+            <strong>Total a pagar: </strong> $<span id="total">0</span>
+        </div>
+
+        <form id="form-pago">
+            <h2>Datos de pago</h2>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="tarjeta">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" maxlength="16" required>
+
+            <label for="mes">Mes de expiración:</label>
+            <input type="text" id="mes" maxlength="2" required>
+
+            <label for="anio">Año de expiración:</label>
+            <input type="text" id="anio" maxlength="4" required>
+
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" maxlength="3" required>
+
+            <button type="submit" id="pagar-final">Pagar</button>
+        </form>
+    </main>
+
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Explora</h4>
+                <a href="../pages/crea-tu-ancheta.html">Crea tu ancheta</a>
+                <a href="../pages/anchetas-de-coleccion.html">Anchetas de colección</a>
+            </div>
+            <div>
+                <h4>Sobre Nosotros</h4>
+                <a href="../pages/quienes-somos.html">Quiénes somos</a>
+                <a href="../pages/nuestra-historia.html">Nuestra historia</a>
+                <a href="../pages/compromisos.html">Compromisos</a>
+            </div>
+            <div>
+                <h4>Mi Cuenta</h4>
+                <a href="../pages/mis-compras.html">Mis compras</a>
+                <a href="../pages/mis-direcciones.html">Mis direcciones</a>
+            </div>
+            <div>
+                <h4>Políticas</h4>
+                <a href="../pages/terminos-y-condiciones.html">Términos y condiciones</a>
+                <a href="../pages/privacidad.html">Privacidad</a>
+                <a href="../pages/envios-y-devoluciones.html">Envíos y devoluciones</a>
+            </div>
+
+            <!-- Redes sociales al lado -->
+            <div class="social">
+                <a href="https://www.facebook.com/share/1T8eEYajK2/" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/p.lafelicidadenpapel?igsh=MXZubTNub3l0ODR6ag==" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@hlcmjklb?si=q9Fq4fU1cJo6OpVr" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="../pages/administrador.html">
+                    <i class="fa-solid fa-user-shield"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/pago.js"></script>
+
+
+</body>
+
+</html>

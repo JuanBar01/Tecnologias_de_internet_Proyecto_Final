@@ -1,0 +1,181 @@
+/* ----- ESTILOS GENERALES ----- */
+.quienes-somos {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding: 60px 10%;
+  background: linear-gradient(180deg, #fff 0%, #ffeaf3 100%);
+  box-sizing: border-box;
+}
+
+/* ----- INTRO ----- */
+.quienes-somos .intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.quienes-somos .intro h1 {
+  font-size: 2.5rem;
+  color: #e2559b;
+  margin-bottom: 20px;
+}
+
+.quienes-somos .intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ----- HISTORIA ----- */
+.quienes-somos .historia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 80px;
+  flex-wrap: wrap;
+}
+
+.quienes-somos .historia .texto {
+  flex: 1 1 450px;
+}
+
+.quienes-somos .historia .texto h2 {
+  color: #e2559b;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.quienes-somos .historia .texto p {
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.quienes-somos .historia .imagen {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.quienes-somos .historia .imagen img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- MISIÓN Y VISIÓN ----- */
+.mision-vision {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.mision-vision .bloque {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(226, 85, 155, 0.15);
+  flex: 1 1 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mision-vision .bloque:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(226, 85, 155, 0.3);
+}
+
+.mision-vision .bloque i {
+  font-size: 2.2rem;
+  color: #e2559b;
+  margin-bottom: 15px;
+}
+
+.mision-vision .bloque h3 {
+  color: #e2559b;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.mision-vision .bloque p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ----- VALORES ----- */
+.valores {
+  text-align: center;
+}
+
+.valores h2 {
+  color: #e2559b;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.valores .cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.valores .card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px 25px;
+  width: 280px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valores .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(226, 85, 155, 0.25);
+}
+
+.valores .card i {
+  font-size: 2rem;
+  color: #e2559b;
+  margin-bottom: 15px;
+}
+
+.valores .card h3 {
+  color: #e2559b;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.valores .card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .quienes-somos {
+    padding: 40px 5%;
+  }
+
+  .quienes-somos .historia {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .quienes-somos .historia .imagen img {
+    max-width: 350px;
+  }
+
+  .mision-vision {
+    gap: 20px;
+  }
+
+  .valores .cards {
+    gap: 20px;
+  }
+}

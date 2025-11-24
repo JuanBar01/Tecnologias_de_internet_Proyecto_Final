@@ -1,0 +1,126 @@
+/* Contenedor principal */
+.carrito {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(120deg, #ffe6f2 0%, #fff0f7 100%);
+}
+
+/* Tarjetas producto y resumen */
+.producto-detalle,
+.resumen-carrito {
+    background: #fff;
+    border-radius: 20px;
+    padding: 25px;
+    width: 450px;
+    box-shadow: 0 10px 20px rgba(225, 94, 155, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-detalle:hover,
+.resumen-carrito:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(225, 94, 155, 0.25);
+}
+
+/* Encabezados degradados */
+.producto-detalle h2,
+.resumen-carrito h2 {
+    background: linear-gradient(90deg, #ff4db8, #ff80d5);
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+/* Info producto */
+.producto-info {
+    display: flex;
+    gap: 20px;
+}
+
+.producto-info .imagen img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #f5b3ff;
+    box-shadow: 0 5px 15px rgba(225, 94, 155, 0.15);
+}
+
+.producto-info .detalles {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.producto-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.producto-info ul.accesorios>li {
+    margin-bottom: 8px;
+    padding-left: 25px;
+    position: relative;
+    font-weight: 500;
+}
+
+/* Sublistas accesorios */
+.producto-info ul ul li {
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* Resumen carrito */
+.resumen-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.resumen-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.resumen-item.total {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ff4db8;
+}
+
+/* Botón de pago */
+.btn-pagar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, #ff4db8, #ff80d5);
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    margin-top: 15px;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(225, 94, 155, 0.2);
+}
+
+.btn-pagar:hover {
+    background: linear-gradient(90deg, #ff80d5, #ff4db8);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(225, 94, 155, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    .carrito {
+        flex-direction: column;
+        align-items: center;
+    }
+}

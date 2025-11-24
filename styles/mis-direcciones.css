@@ -1,0 +1,76 @@
+.ubicacion {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #fff 0%, #ffeaf3 100%);
+  color: #333;
+  padding: 60px 10%;
+  box-sizing: border-box;
+}
+
+/* ----- ENCABEZADO ----- */
+.ubicacion .encabezado {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ubicacion .encabezado h1 {
+  color: #e2559b;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.ubicacion .encabezado p {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ----- MAPA ----- */
+.mapa {
+  margin-bottom: 40px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(225, 94, 155, 0.15);
+}
+
+.mapa iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+}
+
+/* ----- DIRECCIÓN ----- */
+.direccion {
+  text-align: center;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.direccion h2 {
+  color: #f18ec2;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.direccion p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .ubicacion {
+    padding: 40px 5%;
+  }
+
+  .ubicacion .encabezado h1 {
+    font-size: 2rem;
+  }
+
+  .direccion h2 {
+    font-size: 1.4rem;
+  }
+}

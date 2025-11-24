@@ -1,0 +1,119 @@
+/* ----- SECCIÓN PRINCIPAL ----- */
+.compromisos {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: linear-gradient(180deg, #fff 0%, #ffeaf3 100%);
+  padding: 60px 10%;
+  box-sizing: border-box;
+}
+
+/* ----- INTRO ----- */
+.compromisos .intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.compromisos .intro h1 {
+  font-size: 2.5rem;
+  color: #e2559b;
+  margin-bottom: 20px;
+}
+
+.compromisos .intro p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ----- BLOQUES DE COMPROMISOS ----- */
+.principios {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.bloque {
+  background: #fff;
+  border-radius: 20px;
+  padding: 30px;
+  flex: 1 1 300px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bloque:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.bloque i {
+  font-size: 2.5rem;
+  color: #f18ec2;
+  margin-bottom: 15px;
+}
+
+.bloque h2 {
+  color: #e2559b;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.bloque p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ----- VALORES EXTRA ----- */
+.valores-extra {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.valores-extra h2 {
+  color: #e2559b;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.valores-extra p {
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+.valores-extra img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .compromisos {
+    padding: 40px 5%;
+  }
+
+  .principios {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bloque {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .valores-extra img {
+    max-width: 90%;
+  }
+}

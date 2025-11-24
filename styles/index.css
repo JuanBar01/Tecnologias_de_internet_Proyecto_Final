@@ -1,0 +1,151 @@
+/* Sección principal */
+.main {
+  display: flex;
+  height: 80vh;
+  cursor: pointer;
+}
+
+.left,
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+}
+
+.left {
+  background-color: #eca9cf;
+  color: white;
+}
+
+.right {
+  background-color: white;
+  color: black;
+}
+
+.left:hover {
+  background-color: #ec86c0;
+}
+
+.right:hover {
+  background-color: #c9c9c9;
+}
+
+/* --- Fuente especial para los títulos principales --- */
+.main h1 {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+}
+
+/* --- Sección de colección --- */
+.collection {
+  display: none;
+  /* Oculta al inicio */
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px;
+  position: relative;
+  background-color: white;
+  height: auto;
+  min-height: 70vh;
+  transition: opacity 0.5s ease;
+}
+
+/* Flecha de regreso */
+.back-arrow {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #eca9cf;
+  color: white;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back-arrow:hover {
+  background: #d36ba7;
+}
+
+/* Imagen y texto */
+.collection img {
+  width: 650px;
+  max-width: 100%;
+  height: auto;
+}
+
+.collection .text {
+  max-width: 400px;
+}
+
+.collection h2 {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.collection p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.btn-explora {
+  background: #f18ec2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-explora:hover {
+  background: #d36ba7;
+}
+
+/* --- 🔹 Ajustes Responsivos --- */
+@media (max-width: 900px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .main h1 {
+    font-size: 3rem;
+    padding: 20px;
+  }
+
+  .collection {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .collection img {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .collection .text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .collection h2 {
+    font-size: 2rem;
+  }
+
+  .collection p {
+    font-size: 0.9rem;
+  }
+}

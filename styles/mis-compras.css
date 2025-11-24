@@ -1,0 +1,95 @@
+.mis-compras {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #fff 0%, #ffeaf3 100%);
+    color: #333;
+    padding: 60px 10%;
+    box-sizing: border-box;
+}
+
+/* ----- ENCABEZADO ----- */
+.mis-compras .encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mis-compras .encabezado h1 {
+    color: #e2559b;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.mis-compras .encabezado p {
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ----- TARJETAS DE COMPRAS ----- */
+.tarjetas-compras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(225, 94, 155, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(225, 94, 155, 0.25);
+}
+
+.tarjeta h2 {
+    color: #e2559b;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.estado {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 5px 15px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.estado.enviado {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.estado.pendiente {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.estado.entregado {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+    .mis-compras {
+        padding: 40px 5%;
+    }
+
+    .mis-compras .encabezado h1 {
+        font-size: 2rem;
+    }
+}

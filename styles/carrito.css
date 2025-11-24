@@ -1,0 +1,111 @@
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(180deg, #ffe6f2 0%, #ffc1e0 100%);
+    /* solo aquí */
+    border-radius: 12px;
+}
+
+h1 {
+    text-align: center;
+    color: #e2559b;
+    margin-bottom: 20px;
+}
+
+#carrito-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 2px solid #f5b3ff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carrito-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carrito-item div {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.carrito-item h3 {
+    margin: 0 0 5px 0;
+    color: #e2559b;
+}
+
+.carrito-item .precio {
+    font-weight: bold;
+    color: #ff0080;
+}
+
+
+#total-container {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.botones-carrito {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilo bonito para el botón Eliminar en carrito-item */
+.carrito-item .btn-eliminar {
+    background-color: #ffc1f0;
+    /* color rosa claro */
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.carrito-item .btn-eliminar:hover {
+    background-color: #ff80d5;
+    /* rosa más intenso al pasar el mouse */
+    transform: scale(1.05);
+    /* efecto pequeño de agrandamiento */
+}
+
+
+#vaciar-carrito,
+#pagar-carrito {
+    padding: 10px 25px;
+    border: 2px solid #ff80d5;
+    /* borde rosado */
+    background-color: #ffffff;
+    /* fondo blanco */
+    color: #e2559b;
+    /* texto rosado */
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s, color 0.2s;
+}
+
+#vaciar-carrito:hover,
+#pagar-carrito:hover {
+    background-color: #ff80d5;
+    /* fondo rosado al pasar */
+    color: #fff;
+    /* texto blanco */
+    transform: scale(1.05);
+}
